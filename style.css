@@ -1,4 +1,6 @@
-p {
-  text-align: center;
-  font-size:300px;
+p h1 {
+	font-family: comic-sans;
+    color: white;
+    text-align: center;
+    font-size: 100px
 }
