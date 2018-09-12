@@ -10,6 +10,8 @@ quotes[3]='Im a heavy breathy boy'
 quotes[4]='*whispery voice* "tricerathicc" <i> -Charles F.</i>'
 quotes[5]='Im a big girl now <i> -Charles F.</i>'
 quotes[6]='no <i> - Jensen F. </i>'
+quotes[7]='im gay <i> -Ashling R.</i>'
+
 
 
 
