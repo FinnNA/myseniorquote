@@ -4,7 +4,7 @@ var quotes=new Array()
 //change the quotes if desired. Add/ delete additional quotes as desired.
 
 quotes[0]='<i class="em em-ok_hand" style=" font-size:200px;"></i>'
-quotes[1]='Whats the deal with airplane food.'
+quotes[1]='Whats the deal with airline food.'
 quotes[2]='YA *voicecrack* YEET <i> -Marcus G. </i>'
 quotes[3]='Im a heavy breathy boy'
 quotes[4]='*whispery voice* "tricerathicc" <i> -Charles F.</i>'
