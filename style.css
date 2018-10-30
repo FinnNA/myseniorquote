@@ -1,5 +1,6 @@
 body{
 	background-color:#deeaee;
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
 
 }
  h1 {
@@ -13,9 +14,9 @@ body{
 	font-size: 80px;
 	 color: #c94c4c;
     text-align: center;
-   
-    
+   font-family: "Comic Sans MS", "Comic Sans", cursive;
+
 }
 p{
-    
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
