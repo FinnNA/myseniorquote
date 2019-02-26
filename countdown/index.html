@@ -1,0 +1,140 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+background-color:black;
+
+
+  
+}
+h1 {
+color: white;
+font-family: Arial Narrow, Arial, sans-serif;  font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; 
+  text-align: center;
+  font-size: 120px;
+  margin-top: 0px;
+  }
+  h2 {
+color: white;
+font-family: Arial Narrow, Arial, sans-serif;  font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; 
+  text-align: center;
+  font-size: 90px;
+  margin-top: 0px;
+  }
+p {
+color: white;
+font-family: Arial Narrow, Arial, sans-serif;  font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; 
+  text-align: center;
+  font-size: 60px;
+  margin-top: 0px;
+}
+.container{
+position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+.feedback {
+  background-color : #ff0066;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border-color: #ff0066;
+}
+
+#mybutton {
+  position: fixed;
+  bottom: -4px;
+  right: 10px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h2>Dawn Of<h2>
+<h1 id ="test"> The Final Day<h1>  
+<p id="demo">made by finn</p>
+
+</div>
+<div id="mybutton">
+<button class="feedback" onclick= "window.location='https://croomscon.org/'">Official Croomscon Website</button>
+</div>
+<script>
+var a = ['','one ','two ','three ','four ', 'five ','six ','seven ','eight ','nine ','ten ','eleven ','twelve ','thirteen ','fourteen ','fifteen ','sixteen ','seventeen ','eighteen ','nineteen '];
+var b = ['', '', 'twenty','thirty','forty','fifty', 'sixty','seventy','eighty','ninety'];
+// Set the date we're counting down to
+var countDownDate = new Date("Mar 15, 2019 11:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  //var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+ // var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var hours = Math.floor(distance / (1000 * 60 * 60));
+ // var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+ // var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+ // document.getElementById("demo").innerHTML = days + "d ";
+  document.getElementById("demo").innerHTML = "- "+ hours + " Hours Remain -";
+ // document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "game over man game over";
+  }
+}, 1000);
+function myFunction() {
+ var url = "https://croomscon.org/";
+    window.location(url);
+}
+ /*
+window.onload = function() {
+
+ countUpFromTime("feb 1, 2019 12:00:00"); // ****** Change this line!
+}
+function countUpFromTime(countFrom, id, num) {
+  
+  countFrom = new Date(countFrom).getTime();
+  var now = new Date(),
+      countFrom = new Date(countFrom),
+      timeDifference = (now - countFrom);
+    
+  var secondsInADay = 60 * 60 * 1000 * 24,
+    
+  number = Math.floor(timeDifference / (secondsInADay) * 1);
+ // hours = Math.floor((timeDifference % (secondsInADay)) / (secondsInAHour) * 1);
+ // mins = Math.floor(((timeDifference % (secondsInADay)) % (secondsInAHour)) / (60 * 1000) * 1);
+ // secs = Math.floor((((timeDifference % (secondsInADay)) % (secondsInAHour)) % (60 * 1000)) / 1000 * 1)
+    n = ('000000000' + num).substr(-9).match(/^(\d{2})(\d{2})(\d{2})(\d{1})(\d{2})$/);
+    if (!n) return; var str = '';
+    str += (n[1] != 0) ? (a[Number(n[1])] || b[n[1][0]] + ' ' + a[n[1][1]]) + 'crore ' : '';
+    str += (n[2] != 0) ? (a[Number(n[2])] || b[n[2][0]] + ' ' + a[n[2][1]]) + 'lakh ' : '';
+    str += (n[3] != 0) ? (a[Number(n[3])] || b[n[3][0]] + ' ' + a[n[3][1]]) + 'thousand ' : '';
+    str += (n[4] != 0) ? (a[Number(n[4])] || b[n[4][0]] + ' ' + a[n[4][1]]) + 'hundred ' : '';
+    str += (n[5] != 0) ? ((str != '') ? 'and ' : '') + (a[Number(n[5])] || b[n[5][0]] + ' ' + a[n[5][1]]) + 'only ' : '';
+    return str;
+	var idEl = document.getElementById(id);
+	idEl.getElementsByClassName('words')[0].innerHTML = days;
+	 document.getElementById('words').innerHTML = "The " +number+ " Day";
+}
+*/
+//function inWords (num) {
+
+   
+
+</script>
+
+</body>
+</html>
